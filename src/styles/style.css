@@ -1,22 +1,20 @@
 @font-face {
     font-family: 'SixtyFour';
-    src: url('../ttf/Sixtyfour-Regular-VariableFont_BLED\,SCAN.ttf') format('truetype');
+    src: url('/ttf/Sixtyfour-Regular-VariableFont_BLED,SCAN.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'DejaVuCustom';
-    src: url('../ttf/DejaVuSansMono.ttf') format('truetype');
+    src: url('/ttf/DejaVuSansMono.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'DejaVuCustomBold';
-    src: url('../ttf/DejaVuSansMono-Bold.ttf') format('truetype');
+    src: url('/ttf/DejaVuSansMono-Bold.ttf') format('truetype');
 }
 
-
-
 body {
-    font-family: 'DejaVuCustom';
+    font-family: 'DejaVuCustom', sans-serif;
     background-color: #e6e6e6;
     color: #50606b;
     margin: 0;
@@ -41,12 +39,11 @@ a {
     font-family: 'DejaVuCustomBold';
     text-decoration: none;
     color: #7fb38c;
-
 }
 
-
+/* Navigation */
 .navbar {
-    background-image: url('../img/syndromefear.png');
+    background-image: url('/img/syndromefear.png');
     background-size: cover;
     background-position: top;
     padding: 10px 0;
@@ -57,18 +54,17 @@ a {
     margin: 0;
 }
 
-
 .navbar-menu {
     list-style: none;
     display: flex;
+    justify-content: center;
+    gap: 20px;
     font-family: 'DejaVuCustomBold';
-    
 }
 
 .navbar-link {
     color: white;
     text-decoration: none;
-    margin-left: 20px;
     font-size: 1.25rem;
     transition: color 0.3s;
 }
@@ -77,6 +73,7 @@ a {
     color: #ac00f0;
 }
 
+/* Contenu */
 .text {
     margin: 0 10%;
 }
@@ -84,6 +81,7 @@ a {
 .side {
     display: flex;
     gap: 10px;
+    align-items: center;
 }
 
 .textblock {
@@ -93,14 +91,57 @@ a {
 .side-pic {
     display: flex;
     max-width: 33%;
+    border-radius: 10px;
 }
 
-
-.team-title {
-    margin-bottom: 20px;
+/* Boutons de téléchargement */
+.download-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #7fb38c;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
-/* Member styles */
+.download-button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+.download-button i {
+    margin-right: 8px;
+}
+
+.download-button-coming-soon {
+    display: inline-flex;
+    align-items: center;
+    background-color: #b1b1b1;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: not-allowed;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+/* Équipe */
+.team-pic {
+    width: 50%;
+    display: block;
+    margin: 20px auto;
+}
+
 .member {
     margin-bottom: 30px;
     border-bottom: 1px solid #ddd;
@@ -117,6 +158,7 @@ a {
     text-align: justify;
 }
 
+/* Timeline */
 .timeline {
     position: relative;
     margin: 50px auto;
@@ -125,15 +167,12 @@ a {
     border-left: 4px solid #8c92ac;
 }
 
-
-/* Timeline item */
 .timeline-item {
     position: relative;
     padding: 20px 20px 20px 40px;
     margin-bottom: 20px;
 }
 
-/* Marker (circle) */
 .timeline-marker {
     position: absolute;
     left: -10px;
@@ -146,7 +185,6 @@ a {
     z-index: 1;
 }
 
-/* Content box */
 .timeline-content {
     background: #fff;
     padding: 15px;
@@ -154,14 +192,12 @@ a {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Title */
 .timeline-content h3 {
     margin-top: 0;
     font-size: 1.5rem;
-    color: #8c92ac;;
+    color: #8c92ac;
 }
 
-/* Date */
 .timeline-content .date {
     display: block;
     margin-top: 10px;
@@ -182,6 +218,7 @@ a {
     }
 }
 
+/* Table */
 table {
     border-collapse: collapse;
     width: auto;
@@ -190,75 +227,29 @@ table {
     text-align: left;
     margin-bottom: 100px;
 }
+
 th, td {
     border: 1px solid #ddd;
     padding: 8px;
 }
+
 th {
     background-color: #f4f4f4;
     color: #8c92ac;
 }
+
 tr:nth-child(even) {
     background-color: #f9f9f9;
 }
+
 tr:hover {
     background-color: #f1f1f1;
 }
 
- /* Style du bouton de téléchargement */
- .download-button {
-    display: inline-flex; 
-    align-items: center;
-    background-color: #7fb38c;
+/* footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #50606b;
     color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 5px; 
-    font-size: 16px;
-    cursor: pointer;
-    text-decoration: none;
-    transition: background-color 0.3s, transform 0.3s;
-    margin-right: 10px;
-    margin-bottom: 10px;
-}
-
-
-.download-button:hover {
-    background-color: #45a049; 
-    transform: translateY(-2px); 
-}
-
-
-.download-button i {
-    margin-right: 8px; 
-}
-
-.download-button-coming-soon {
-    display: inline-flex; 
-    align-items: center;
-    background-color: #b1b1b1;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 5px; 
-    font-size: 16px;
-    cursor: pointer;
-    text-decoration: none;
-    transition: background-color 0.3s, transform 0.3s;
-    margin-right: 10px;
-    margin-bottom: 10px;
-}
-
-.download-button-coming-soon:hover {
-    background-color: #969696; 
-    transform: translateY(-2px); 
-}
-
-.download-button-coming-soon i {
-    margin-right: 8px; 
-}
-
-
-.team-pic {
-    width: 50%;
-}
+    margin-top: 20px;
+} */
