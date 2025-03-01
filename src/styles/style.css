@@ -254,3 +254,107 @@ tr:hover {
     color: white;
     margin-top: 20px;
 } */
+
+
+/* Styles responsive pour les téléphones */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+        padding: 0 5%;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+
+    .navbar {
+        background-size: cover;
+        padding: 10px 0;
+        max-height: 200px;
+    }
+
+    .navbar-menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .navbar-link {
+        font-size: 1rem;
+    }
+
+    .text {
+        margin: 0 5%;
+    }
+
+    .side {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .textblock {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .side-pic {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .download-button,
+    .download-button-coming-soon {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .team-pic {
+        width: 80%;
+    }
+
+    .member {
+        padding-bottom: 15px;
+    }
+
+    .timeline {
+        max-width: 90%;
+        margin: 30px auto;
+    }
+
+    .timeline-item {
+        padding: 15px 15px 15px 30px;
+    }
+
+    .timeline-marker {
+        width: 15px;
+        height: 15px;
+        left: -8px;
+    }
+
+    .timeline-content h3 {
+        font-size: 1.25rem;
+    }
+
+    table {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    th, td {
+        padding: 6px;
+    }
+
+    footer {
+        text-align: center;
+        font-size: 14px;
+    }
+}
