@@ -3,9 +3,11 @@ const currentPath = Astro.url.pathname;
 const basePath = currentPath.startsWith('/team') || currentPath.startsWith('/project') || currentPath.startsWith('/downloads') || currentPath.startsWith('/links')
     ? '../'
     : './';
+
+const navbarStyle = `background-image: url('${basePath}img/syndromefear.png');`;
 ---
 
-<nav class="navbar">
+<nav class="navbar" style={navbarStyle}>
     <h1>Syndrome Fear</h1>
     <ul class="navbar-menu">
         <li><a href={`${basePath}index.html`} class="navbar-link">Accueil</a></li>

@@ -44,7 +44,7 @@ a {
 
 /* Navigation */
 .navbar {
-    background-image: url('/img/syndromefear.png');
+    background-image: url('../img/syndromefear.png');
     background-size: cover;
     background-position: top;
     padding: 10px 0;
