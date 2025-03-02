@@ -274,7 +274,7 @@ tr:hover {
         text-align: center;
     }
 
-    .navbar {
+    .navbar ul{
         background-size: cover;
         padding: 200px 0;
         max-height: 200px;
@@ -293,6 +293,7 @@ tr:hover {
 
     .text {
         margin: 0 5%;
+        padding-top: 250px;
     }
 
     .side {
