@@ -1,27 +1,9 @@
 ---
-import "../styles/style.css"; 
+import BaseLayout from '../layouts/Layout.astro';
 ---
 
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Syndrome Fear : Téléchargements</title>
-    <link rel="icon" href="../img/favicon.gif">
-    <link rel="stylesheet" href="../static/css/style.css">
-</head>
-<body>
-    <nav class="navbar">
-        <h1>Syndrome Fear</h1>
-        <ul class="navbar-menu">
-            <li><a href="../index.html" class="navbar-link">Accueil</a></li>
-            <li><a href="../team/index.html" class="navbar-link">Ctrl+Alt+Elite</a></li>
-            <li><a href="../project/index.html" class="navbar-link">Déroulement du projet</a></li>
-            <li><a href="../downloads/index.html" class="navbar-link">Téléchargements</a></li>
-            <li><a href="../links/index.html" class="navbar-link">Liens utiles</a></li>
-        </ul>
-    </nav>
+<BaseLayout title="Ctrl+Alt+Elite">
+
     <div class="text">
         <h2>Origine de l'idée</h2>
         <p>
@@ -105,10 +87,6 @@ import "../styles/style.css";
     </table>
 
         </div>
-</body>
-<footer class="text">
-    <p>
-        Copyright 2025 - Ctrl+Alt+Elite
-    </p>
-</footer>
-</html>
+
+        
+</BaseLayout>
